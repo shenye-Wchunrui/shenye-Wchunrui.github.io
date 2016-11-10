@@ -86,7 +86,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
@@ -110,10 +110,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/archives/"/>
 
 
-  <title> Hexo </title>
+  <title> Archive | Hexo </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="">
@@ -134,9 +134,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left  page-archive  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -215,111 +213,67 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
+
+    <span class="archive-page-counter">
+      
+      
+      
+        
+      
+      Um..! 1 post. Keep on posting.
+    </span>
+
     
+
+      
+      
       
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
+      
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/10/preg_ /" itemprop="url">
-                  Untitled
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-11-10T15:37:49+08:00" content="2016-11-10">
-              2016-11-10
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
       
       
 
       
+
+  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
         
-          
-            <h1 id="preg-的用法"><a href="#preg-的用法" class="headerlink" title="preg_ 的用法"></a>preg_ 的用法</h1><pre><code>preg_match()和preg_match_all()
-</code></pre><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$str = <span class="string">"内容内容内容内容内容"</span>;</div><div class="line">$arr = preg_match(<span class="string">'/内容/'</span>,$str);<span class="comment">//输出1</span></div><div class="line"><span class="comment">//获取第一个内容</span></div><div class="line">preg_match_all(<span class="string">'/内容/'</span>,$str,$arr);<span class="comment">//输出数组</span></div><div class="line"><span class="comment">//获取全部内容</span></div><div class="line">print_r($arr);</div></pre></td></tr></table></figure>
-<pre><code>preg_replace()
-</code></pre><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$str = <span class="string">"abc@163.com.abc@163.com"</span>;</div><div class="line">$reg = <span class="string">'/@\d+/'</span>;</div><div class="line">$str = preg_replace($reg,<span class="string">"q123"</span>,$str);</div><div class="line"><span class="comment">//获取所有的@并换成q123拼接成新的字符串;</span></div><div class="line"><span class="keyword">echo</span> <span class="string">"$str"</span>;<span class="comment">//输出由q123拼接成的新字符串</span></div></pre></td></tr></table></figure>
-<pre><code>preg_split()//劈开字符串
-</code></pre><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$str = <span class="string">"abc123def134adfoi"</span>;</div><div class="line"><span class="comment">// $reg = "/\d+/";</span></div><div class="line">$reg = <span class="string">"/[a-z]+/"</span>;</div><div class="line">$arr = preg_split($reg,$str);</div><div class="line"><span class="comment">//以$reg劈开,组成新的数组</span></div><div class="line">print_r($arr);</div></pre></td></tr></table></figure>
-<pre><code>preg_grep()//劈开数组
-</code></pre><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$arr = [<span class="number">12</span>,<span class="string">'abc'</span>,<span class="number">53</span>,<span class="string">'c'</span>,<span class="number">10</span>];</div><div class="line">$reg = <span class="string">'/\d/'</span>;</div><div class="line">$newarr = preg_grep($reg,$arr);</div><div class="line"><span class="comment">//以$reg劈开,组成新的数组</span></div><div class="line">print_r($newarr);</div></pre></td></tr></table></figure>
-          
+            <a class="post-title-link" href="/2016/11/10/preg_ /" itemprop="url">
+              
+                <span itemprop="name">Untitled</span>
+              
+            </a>
         
-      
-    </div>
+      </h1>
 
-    <div>
-      
-    </div>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-11-10T15:37:49+08:00"
+              content="2016-11-10" >
+          11-10
+        </time>
+      </div>
 
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+    </header>
   </article>
 
 
+
     
+
   </section>
 
   
+
 
 
           </div>
@@ -479,6 +433,12 @@
   
 
   
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
+
 
   
 

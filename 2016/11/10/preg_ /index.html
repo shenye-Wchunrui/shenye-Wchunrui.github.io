@@ -84,12 +84,25 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="preg_ 的用法preg_match()和preg_match_all()
+123456$str = &quot;内容内容内容内容内容&quot;;$arr = preg_match(&apos;/内容/&apos;,$str);//输出1//获取第一个内容preg_match_all(&apos;/内容/&apos;,$str,$arr);//输出数组//获取全部内容print_r($arr);
+preg_replace()
+12345$str = &quot;">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/11/10/preg_ /index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="preg_ 的用法preg_match()和preg_match_all()
+123456$str = &quot;内容内容内容内容内容&quot;;$arr = preg_match(&apos;/内容/&apos;,$str);//输出1//获取第一个内容preg_match_all(&apos;/内容/&apos;,$str,$arr);//输出数组//获取全部内容print_r($arr);
+preg_replace()
+12345$str = &quot;">
+<meta property="og:updated_time" content="2016-11-10T07:37:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="preg_ 的用法preg_match()和preg_match_all()
+123456$str = &quot;内容内容内容内容内容&quot;;$arr = preg_match(&apos;/内容/&apos;,$str);//输出1//获取第一个内容preg_match_all(&apos;/内容/&apos;,$str,$arr);//输出数组//获取全部内容print_r($arr);
+preg_replace()
+12345$str = &quot;">
 
 
 
@@ -110,10 +123,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/10/preg_ /"/>
 
 
-  <title> Hexo </title>
+  <title>  | Hexo </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="">
@@ -134,9 +147,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -215,9 +226,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -238,9 +249,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/11/10/preg_ /" itemprop="url">
-                  Untitled
-                </a>
               
             
           </h1>
@@ -280,9 +288,7 @@
       
 
       
-        
-          
-            <h1 id="preg-的用法"><a href="#preg-的用法" class="headerlink" title="preg_ 的用法"></a>preg_ 的用法</h1><pre><code>preg_match()和preg_match_all()
+        <h1 id="preg-的用法"><a href="#preg-的用法" class="headerlink" title="preg_ 的用法"></a>preg_ 的用法</h1><pre><code>preg_match()和preg_match_all()
 </code></pre><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$str = <span class="string">"内容内容内容内容内容"</span>;</div><div class="line">$arr = preg_match(<span class="string">'/内容/'</span>,$str);<span class="comment">//输出1</span></div><div class="line"><span class="comment">//获取第一个内容</span></div><div class="line">preg_match_all(<span class="string">'/内容/'</span>,$str,$arr);<span class="comment">//输出数组</span></div><div class="line"><span class="comment">//获取全部内容</span></div><div class="line">print_r($arr);</div></pre></td></tr></table></figure>
 <pre><code>preg_replace()
 </code></pre><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$str = <span class="string">"abc@163.com.abc@163.com"</span>;</div><div class="line">$reg = <span class="string">'/@\d+/'</span>;</div><div class="line">$str = preg_replace($reg,<span class="string">"q123"</span>,$str);</div><div class="line"><span class="comment">//获取所有的@并换成q123拼接成新的字符串;</span></div><div class="line"><span class="keyword">echo</span> <span class="string">"$str"</span>;<span class="comment">//输出由q123拼接成的新字符串</span></div></pre></td></tr></table></figure>
@@ -290,16 +296,20 @@
 </code></pre><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$str = <span class="string">"abc123def134adfoi"</span>;</div><div class="line"><span class="comment">// $reg = "/\d+/";</span></div><div class="line">$reg = <span class="string">"/[a-z]+/"</span>;</div><div class="line">$arr = preg_split($reg,$str);</div><div class="line"><span class="comment">//以$reg劈开,组成新的数组</span></div><div class="line">print_r($arr);</div></pre></td></tr></table></figure>
 <pre><code>preg_grep()//劈开数组
 </code></pre><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$arr = [<span class="number">12</span>,<span class="string">'abc'</span>,<span class="number">53</span>,<span class="string">'c'</span>,<span class="number">10</span>];</div><div class="line">$reg = <span class="string">'/\d/'</span>;</div><div class="line">$newarr = preg_grep($reg,$arr);</div><div class="line"><span class="comment">//以$reg劈开,组成新的数组</span></div><div class="line">print_r($newarr);</div></pre></td></tr></table></figure>
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -310,16 +320,15 @@
 
       
       
-        <div class="post-eof"></div>
-      
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -327,6 +336,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -346,8 +359,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -383,6 +405,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#preg-的用法"><span class="nav-number">1.</span> <span class="nav-text">preg_ 的用法</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -479,6 +512,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
 
   
 
